@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"mr-xiaochen.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"mr-xiaochen.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="雁字回时，月满西楼">
@@ -156,7 +156,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mr-xiaochen.github.io/2020/03/04/text2/">
+    <link itemprop="mainEntityOfPage" href="https://mr-xiaochen.github.io/2020/03/05/MIanXiangDuiXiang/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -170,7 +170,118 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/04/text2/" class="post-title-link" itemprop="url">线性表</a>
+            <a href="/2020/03/05/MIanXiangDuiXiang/" class="post-title-link" itemprop="url">面向对象</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-05 22:29:05 / 修改时间：23:01:51" itemprop="dateCreated datePublished" datetime="2020-03-05T22:29:05+08:00">2020-03-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一-面向对象的特点"><a href="#一-面向对象的特点" class="headerlink" title="一.面向对象的特点"></a>一.面向对象的特点</h1><h2 id="1-封装-Encapsulation"><a href="#1-封装-Encapsulation" class="headerlink" title="1.封装  (Encapsulation)"></a>1.封装  (Encapsulation)</h2><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>把客观世界中联系紧密的元素及其相关操作组织在一起，使其相互作用隐藏、封装在内部，而对外部对象只提供单一的功能接口</p>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>将对象的使用者和设计者分开</p>
+<h3 id="类比"><a href="#类比" class="headerlink" title="类比"></a>类比</h3><p>汽车的左转、右转（方向盘 与 车轮； 被陶瓷封装的集成芯片</p>
+<h3 id="表现在几个方面"><a href="#表现在几个方面" class="headerlink" title="表现在几个方面"></a>表现在几个方面</h3><ol>
+<li>在类的定义中设置对对象中的成员变量和方法进行访问的权限。</li>
+<li>提供一个统一供其它类引用的方法。</li>
+<li>其它对象不能直接修改本对象所拥有的属性和方法</li>
+</ol>
+<hr>
+<h2 id="2-继承-Inheritance"><a href="#2-继承-Inheritance" class="headerlink" title="2.继承  (Inheritance)"></a>2.继承  (Inheritance)</h2><p>继承是OOP中一种由已有的类创建新类的机制。<br>· 一个父类（公共属性的集合）可以有多个子类（是父类的特殊化），一个子类只可以有一个父类<br>· 子类可以直接使用父类的方法，也可以根据需要修改父类中已经定义的方法（即不改变方法名，而修改方法的参数个数、参数类型）。父类和子类可有同名的方法（多态性）</p>
+<h3 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h3><h4 id="基本思想-1"><a href="#基本思想-1" class="headerlink" title="基本思想"></a>基本思想</h4><p>类之间的继承关系是现实世界中遗传关系的直接模拟，它表示类之间的内在联系以及对属性和操作的共享，即子类可以沿用父类（被继承类）的某些特征。子类也可以具有自己独立的属性和操作。</p>
+<h4 id="子类从父类继承有两个主要的方面"><a href="#子类从父类继承有两个主要的方面" class="headerlink" title="子类从父类继承有两个主要的方面"></a>子类从父类继承有两个主要的方面</h4><p>· <strong>属性的继承</strong>： 例如，公司是一个父类，一个公司有名称、地址、经理、雇员等，这些都属于结构方面。<br>· <strong>方法的继承</strong>： 一个父类定义了若干操作，如一个公司要有项目开发、利润创造、经理任命、员工录用等操作，子公司也将继承这些行为。</p>
+<p><strong>类的定义和继承</strong></p>
+<pre><code>class Point2D{
+    int X, Y;            //Point2D私有属性
+    public Point2D(){    //无参的Point2D构造方法
+        X=0;  Y=0;
+    }
+    Point2D(int x, int y){//有参的Point2D构造方法
+        X=x;  Y=y;
+        System.out.println(&quot;Point2D Constructed With Parameters!&quot;);
+    }
+    public String toString(){
+        return (&quot;Point position  &quot; + this.X +&quot;  &quot; + this.Y); 
+    }
+} 
+
+class Point3D extends Point2D {
+    int X, Y, Z;      //Point3D私有成员属性
+    public Point3D(int x, int y, int z){ //有参构造函数
+        super(x, y);    Z=z;
+    }
+    public String toString(){
+        return (super.toString()+&quot;  &quot;+ this.Z); 
+    }
+}
+
+public class Test_Point {
+    public static void main(String args[]){
+         Point3D p1, p2;
+         p1=new Point3D(1, 2, 3);
+         System.out.println(p1.toString());
+     }
+}</code></pre><hr>
+<h2 id="3-多态-Polymorphism"><a href="#3-多态-Polymorphism" class="headerlink" title="3.多态  (Polymorphism)"></a>3.多态  (Polymorphism)</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mr-xiaochen.github.io/2020/03/04/XianXingbiao/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Mr-Xiaochen">
+      <meta itemprop="description" content="雁字回时，月满西楼">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Half Slime">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/04/XianXingbiao/" class="post-title-link" itemprop="url">线性表</a>
         </h1>
 
         <div class="post-meta">
@@ -187,7 +298,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-05 21:23:34" itemprop="dateModified" datetime="2020-03-05T21:23:34+08:00">2020-03-05</time>
+                <time title="修改时间：2020-03-05 22:29:18" itemprop="dateModified" datetime="2020-03-05T22:29:18+08:00">2020-03-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -371,7 +482,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -384,7 +495,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -429,7 +540,7 @@
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.2
   </div>
 
         
